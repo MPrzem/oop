@@ -19,4 +19,5 @@ public:
     virtual std::string getName() const;
     virtual uint16_t getAmount() const;
     virtual uint16_t getBasePrice() const;
+    virtual std::string getSpecyiicInfo() const=0;
 };

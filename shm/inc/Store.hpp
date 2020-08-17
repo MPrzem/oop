@@ -28,5 +28,7 @@ public:
     Response sell(std::shared_ptr<Cargo>, uint16_t, Player*);
 
     // Override from Observer
+    friend std::ostream& operator<<(std::ostream& out, const Store& store);
+
     void nextDay() override;
 };

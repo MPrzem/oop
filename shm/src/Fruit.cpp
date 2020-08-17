@@ -1,5 +1,9 @@
 #include "Fruit.hpp"
 
+std::string Fruit::getSpecyiicInfo() const {
+    return "";
+}
+
 std::string Fruit::getName() const {
       return name_;
 }

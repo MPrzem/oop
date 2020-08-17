@@ -18,7 +18,7 @@ public:
     bool operator==(const Cargo&) const override;
     uint16_t getTimeElapsed() const;
     uint16_t getExpiryDate() const;
-
+    std::string getSpecyiicInfo() const override;
 private:
     uint16_t time_elapsed_{0};
     uint16_t time_to_spoil;
