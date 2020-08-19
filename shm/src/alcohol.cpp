@@ -6,6 +6,11 @@ Alcohol::Alcohol(const std::string& name, uint16_t amount, uint16_t basePrice)
 uint16_t Alcohol::getPrice() const {
     return static_cast<uint16_t>(static_cast<float>(basePrice_) * (power_ / maxPower_));
 } 
+
+std::string Alcohol::getSpecyiicInfo() const {
+    return "Alcohol power" + std::to_string(power_);
+} 
+
 uint16_t Alcohol::getAmount() const {
      return amount_; }
 

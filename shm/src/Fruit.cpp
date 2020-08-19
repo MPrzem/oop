@@ -1,5 +1,9 @@
 #include "Fruit.hpp"
 
+std::string Fruit::getSpecyiicInfo() const {
+    return "Time to spoil: " +std::to_string(time_to_spoil);
+}
+
 std::string Fruit::getName() const {
       return name_;
 }

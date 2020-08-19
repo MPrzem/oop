@@ -129,3 +129,16 @@ Response Store::sell(std::shared_ptr<Cargo> cargo, uint16_t amount, Player* play
 
     return Response::done;
 }
+
+std::ostream& operator<<(std::ostream& out, const Store& store){
+    out<<"Cargos onboard:\n";
+     for (const Cargo& cargo : store.cargos_) {
+    out<<"Name: "<<cargo.getName;
+    out<<"Amount: "<<cargo.getAmount;
+    out<<"Price: "<<cargo.getPrices;
+    out<<"Base Price: "<<cargo.getBasePrice;
+    out<<cargo.getSpecyiicInfo;
+    out<<"-------------------/n";
+     }
+     return out;
+}

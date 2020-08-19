@@ -24,7 +24,7 @@ public:
     Cargo& operator+=(uint16_t amount) override;
     Cargo& operator-=(uint16_t amount) override;
     bool operator==(const Cargo&) const override;
-
+    std::string getSpecyiicInfo() const override;
 private:
     Rarity rarity_;
 };
