@@ -8,7 +8,7 @@ uint16_t Alcohol::getPrice() const {
 } 
 
 std::string Alcohol::getSpecyiicInfo() const {
-    return std::to_string(power_);
+    return "Alcohol power" + std::to_string(power_);
 } 
 
 uint16_t Alcohol::getAmount() const {
